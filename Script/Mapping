@@ -1,1 +1,33 @@
-
+#Packages downloaden
+install.packages('BiocManager')
+BiocManager::install('Bioconductor')
+BiocManager::install('Rsubread', force = TRUE)
+browseVignettes('Rsubread')
+library(Rsubread)
+#Indexeren
+buildindex(
+  basename = 'ref_human',
+  reference = 'GCF_000001405.40_GRCh38.p14_genomic.fna',
+  memory = 4000,
+  indexSplit = TRUE)
+#Mapping
+align.norm1 <- align(index = "ref_human", readfile1 = "SRR4785819_1_subset40k.fastq", readfile2 = "SRR4785819_2_subset40k.fastq", output_file = "norm1.BAM")
+align.norm2 <- align(index = "ref_human", readfile1 = "SRR4785820_1_subset40k.fastq", readfile2 = "SRR4785820_2_subset40k.fastq", output_file = "norm2.BAM")
+align.norm3 <- align(index = "ref_human", readfile1 = "SRR4785828_1_subset40k.fastq", readfile2 = "SRR4785828_2_subset40k.fastq", output_file = "norm3.BAM")
+align.norm4 <- align(index = "ref_human", readfile1 = "SRR4785831_1_subset40k.fastq", readfile2 = "SRR4785831_2_subset40k.fastq", output_file = "norm4.BAM")
+align.reuma1 <- align(index = "ref_human", readfile1 = "SRR4785979_1_subset40k.fastq", readfile2 = "SRR4785979_2_subset40k.fastq", output_file = "reuma1.BAM")
+align.reuma2 <- align(index = "ref_human", readfile1 = "SRR4785980_1_subset40k.fastq", readfile2 = "SRR4785980_2_subset40k.fastq", output_file = "reuma2.BAM")
+align.reuma3 <- align(index = "ref_human", readfile1 = "SRR4785986_1_subset40k.fastq", readfile2 = "SRR4785986_2_subset40k.fastq", output_file = "reuma3.BAM")
+align.reuma4 <- align(index = "ref_human", readfile1 = "SRR4785988_1_subset40k.fastq", readfile2 = "SRR4785988_2_subset40k.fastq", output_file = "reuma4.BAM") 
+#Gemapte reads visualiseren
+install('Rsamtools')
+library(Rsamtools)
+#Bestandsnamen van de monsters
+samples <- c('norm1', 'norm2', 'norm3', 'norm4', 'reuma1', 'reuma2', 'reuma3', 'reuma4')
+#Voor elk monster: sorteer en indexeer de BAM-file
+#Sorteer BAM-bestanden
+lapply(samples, function(s) {sortBam(file = paste0(s, '.BAM'), destination = paste0(s, '.sorted'))
+})
+# Indexeer de gesorteerde BAM-file
+lapply(samples, function(s) {indexBam(file = paste0(s, '.sorted.bam'))
+})
