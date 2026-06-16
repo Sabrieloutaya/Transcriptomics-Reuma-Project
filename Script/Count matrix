@@ -1,1 +1,21 @@
+#Count Matrix
+allsamples <- c("norm1.BAM", "norm2.BAM", "norm3.BAM", "norm4.BAM","reuma1.BAM", "reuma2.BAM", "reuma3.BAM", "reuma4.BAM")
 
+count_matrix <- featureCounts(
+  files = allsamples,
+  annot.ext = "genomic.gtf",
+  isPairedEnd = TRUE,
+  isGTFAnnotationFile = TRUE,
+  GTF.attrType = "gene_id",
+  useMetaFeatures = TRUE
+)
+#Count matrix bekijken en opslaan
+str(count_matrix)
+head(count_matrix$annotation)
+Counts<-count_matrix$counts
+head(Counts)
+#kolomnames zonder type file erachter
+colnames(Counts) <- c("norm1", "norm2", "norm3", "norm4","reuma1", "reuma2", "reuma3", "reuma4")
+head(Counts)
+#Opslaan
+write.csv(Counts, "Reuma_Human_countmatrix.csv")
