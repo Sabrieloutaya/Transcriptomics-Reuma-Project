@@ -12,3 +12,6 @@ In dit onderzoek worden transcriptomicsgegevens van synoviumbiopten van RA-pati�
 ## 🔬 Methoden
 
 ## 📊 Resultaten
+<img width="851" height="617" alt="Volcano plot" src="https://github.com/user-attachments/assets/0b1a2dc2-3f7f-4930-a6b2-01a624abe1ab" />
+<img width="773" height="617" alt="GO-analyse barplot" src="https://github.com/user-attachments/assets/36e09a9b-5f99-4e5b-bfe9-4a44b6581db9" />
+<img width="1173" height="763" alt="B-cell receptor signaling pathview" src="https://github.com/user-attachments/assets/f9816b2a-4197-4017-a7e7-b0075df9eccb" />
