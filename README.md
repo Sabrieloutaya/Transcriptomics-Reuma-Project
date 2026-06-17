@@ -1,4 +1,4 @@
-# 🧬 Transcriptomics-Reuma-Project
+# 🧬 Genen binnen de B-celreceptorsignaalroute vertonen een afwijkende expressie in synoviumbiopten van patiënten met reumatoïde artritis vergeleken met gezonde controles
 <img width="1600" height="960" alt="image" src="https://github.com/user-attachments/assets/df82af55-4d98-4f65-a0b7-7c78584f9710" />
 
 ### 
