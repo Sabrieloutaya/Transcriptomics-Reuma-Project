@@ -1,1 +1,92 @@
+#Statistiek & analyse
+Countss <- read.delim("count_matrix_RA.TXT", header = TRUE, row.names = 1 )
+BiocManager::install("DESeq2")
+BiocManager::install("KEGGREST")
+BiocManager::install("EnhancedVolcano")
+BiocManager::install("pathview")
+library(DESeq2)
+library(KEGGREST)
+library(EnhancedVolcano)
+library(pathview)
+
+treatment <- c("normal", "normal", "normal","normal", "reuma", "reuma", "reuma","reuma")
+treatment_table <- data.frame(treatment)
+colnames(Countss)<- c('norm1', 'norm2', 'norm3','norm4', 'reuma1', 'reuma2', 'reuma3','reuma4')
+head(Countss)
+head(treatment_table,8)
+rownames(treatment_table) <- c('norm1', 'norm2', 'norm3','norm4', 'reuma1', 'reuma2', 'reuma3','reuma4')
+head(treatment_table,8)
+#Statistiek
+dds <- DESeqDataSetFromMatrix(countData = Countss,
+                              colData = treatment_table,
+                              design = ~ treatment)
+dds <- DESeq(dds)
+resultaten <- results(dds)
+write.table(resultaten, file = 'ResultatenREUMA.csv', row.names = TRUE, col.names = TRUE)
+head(resultaten)
+#hoeveel genen zijn er echt veranderd?
+sum(resultaten$padj < 0.05 & resultaten$log2FoldChange > 1, na.rm = TRUE)
+sum(resultaten$padj < 0.05 & resultaten$log2FoldChange < -1, na.rm = TRUE)
+#Welke genen springen eruit?
+hoogste_fold_change <- resultaten[order(resultaten$log2FoldChange, decreasing = TRUE), ]
+head(hoogste_fold_change)
+laagste_fold_change <- resultaten[order(resultaten$log2FoldChange, decreasing = FALSE), ]
+head(laagste_fold_change)
+laagste_p_waarde <- resultaten[order(resultaten$padj, decreasing = FALSE), ]
+head(laagste_p_waarde)
+
+#Visualisatie:Volcano plot
+EnhancedVolcano(resultaten,
+                lab = rownames(resultaten),
+                x = 'log2FoldChange',
+                y = 'padj')
+#GO-analyse
+BiocManager::install("org.Hs.eg.db")
+BiocManager::install("clusterProfiler")
+library(clusterProfiler)
+library("org.Hs.eg.db") 
+All_genes <- rownames(Countss)
+head(All_genes)
+clean <- resultaten[!is.na(resultaten$padj) & !is.na(resultaten$log2FoldChange), ]
+up <- clean[clean$padj < 0.05 & clean$log2FoldChange > 1, ]
+down <- clean[clean$padj < 0.05 & clean$log2FoldChange < -1, ]
+values_genes <- rbind(up, down)
+nrow(values_genes)
+valu_genes <- rownames(values_genes)
+head(valu_genes) 
+
+gene.df <- bitr(
+  valu_genes,
+  fromType = "SYMBOL",
+  toType = "ENTREZID",
+  OrgDb = org.Hs.eg.db)
+ego <- enrichGO(
+  gene = gene.df$ENTREZID,
+  OrgDb = org.Hs.eg.db,
+  keyType = "ENTREZID",
+  ont = "BP",
+  pAdjustMethod = "BH",
+  pvalueCutoff = 0.05)
+head(as.data.frame(ego))
+barplot(ego, showCategory = 10)
+
+#Pathway analyse
+resultaten[1] <- NULL
+resultaten[2:5] <- NULL
+#B-cel receptor pathway
+pathview(
+  gene.data = resultaten,
+  pathway.id = "hsa04662",  
+  species = "hsa",          
+  gene.idtype = "SYMBOL",     
+  limit = list(gene = 5)    
+)
+#Reuma pathway 
+pathview(
+  gene.data = resultaten,
+  pathway.id = "hsa05323",  
+  species = "hsa",          
+  gene.idtype = "SYMBOL",     
+  limit = list(gene = 5)    
+)
 
