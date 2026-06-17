@@ -1,6 +1,14 @@
-# Transcriptomics-Reuma-Project
+# 🧬 Transcriptomics-Reuma-Project
+<img width="1600" height="960" alt="image" src="https://github.com/user-attachments/assets/df82af55-4d98-4f65-a0b7-7c78584f9710" />
 
-#Introductie 
+### 
+#### 
+## Introductie
 
 Reumatoïde artritis (RA) is een chronische auto-immuunziekte die zorgt voor gewrichtsontstekingen, wat kan leiden tot ernstige boterosies en functieverlies (Almutairi et al., 2020). In 2020 leefden wereldwijd naar schattig 17,6 miljoen mensen met RA wereldwijd dit is een stijging van 14,1% sinds 1990.                Er wordt voorspeld dat er in 2050 31,7 miljoen mensen RA-patiënten zullen zijn (Black et al., 2023).                                                                De exacte oorzaak is nog niet bekend, maar genetische aanleg en omgevingsfactoren spelen een belangrijke rol (Gabriel, 2001). 
+
 In dit onderzoek worden transcriptomicsgegevens van synoviumbiopten van RA-patiënten en gezonde controles geanalyseerd om genen en biologische processen te identificeren die betrokken zijn bij reumatoïde artritis. Met de focus op de B-celreceptorsignaalroute.                                                             Hierbij staat de vraag of de expressie van genen binnen de B-celreceptorsignaalroute verschilt tussen patiënten met reumatoïde artritis en gezonde controles centraal. Om deze vraag te beantwoorden wordt eerst onderzocht welke genen significant differentieel tot expressie worden gebracht tussen beide groepen. Vervolgens wordt bepaald welke biologische processen verrijkt zijn onder de differentieel tot expressie gebrachte genen. Ten slotte wordt specifiek gekeken welke genen binnen de B-celreceptorsignaalroute een verhoogde of verlaagde expressie vertonen bij RA-patiënten ten opzichte van gezonde controles. 
+
+## 🔬 Methoden
+
+## 📊 Resultaten
