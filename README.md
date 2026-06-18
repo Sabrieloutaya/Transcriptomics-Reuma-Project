@@ -21,7 +21,9 @@ Voor de differentiële genexpressie werd een DESeqDataSet gemaakt op basis van d
 Om verschillen in genexpressie tussen RA-patiënten en gezonde controles vast te stellen werden differentieel tot expressie gebrachte genen gevisualiseerd in een volcano plot. Zoals weergegeven in figuur 1 waren `ADAMDEC1`, `BCL2A1`en `SRGN` verhoogd tot expressie gebracht. In tegenstelling tot`ANKRD30BL`, `MT-ND6`en `ZNF598`die verlaagd tot expressie werden gebracht. 
 
 <img width="851" height="617" alt="Volcano plot" src="https://github.com/user-attachments/assets/0b1a2dc2-3f7f-4930-a6b2-01a624abe1ab" />
+
 ### Gene Ontology analyse
+
 <img width="773" height="617" alt="GO-analyse barplot" src="https://github.com/user-attachments/assets/36e09a9b-5f99-4e5b-bfe9-4a44b6581db9" />
 <img width="1173" height="763" alt="B-cell receptor signaling pathview" src="https://github.com/user-attachments/assets/f9816b2a-4197-4017-a7e7-b0075df9eccb" />
 
