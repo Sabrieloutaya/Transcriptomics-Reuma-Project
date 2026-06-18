@@ -29,7 +29,7 @@ Om inzicht te krijgen bij welke biologische processen de differentieel tot expre
 <img width="773" height="617" alt="GO-analyse barplot" src="https://github.com/user-attachments/assets/36e09a9b-5f99-4e5b-bfe9-4a44b6581db9" />
 
 ### KEGG pathway analyse
-
+Om de betrokken signaalroutes van de differentieel tot expressie komende genen te onderzoeken, werd een pathway analyse uitgevoerd.                             De B-celreceptorsignaalroute bevatte op en neer gereguleerde genen in verschillende delen van de route (figuur 3), wat wijst op veranderingen in de B-celsignalering. 
 
 <img width="1173" height="763" alt="B-cell receptor signaling pathview" src="https://github.com/user-attachments/assets/f9816b2a-4197-4017-a7e7-b0075df9eccb" />
 
