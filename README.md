@@ -17,6 +17,8 @@ De RNA-seq data werden geanalyseerd in R met behulp van Bioconductor packages. V
 Voor de differentiële genexpressie werd een DESeqDataSet gemaakt op basis van de countmatrix met de package `DESeq2` [v1.52.0]. Genen met een p-waarde <0,05 en een log2FoldChange (log2FC) <-1 of >1 werden gezien als significant differentieel tot expressie gebracht. De resultaten werden gevisualiseerd met een volcano plot, gemaakt met `EnhancedVolcano` [v1.30.0]. Vervolgens werd een GO-analyse uitgevoerd met `clusterProfiler` [v4.20.0] en `org.Hs.eg.db` [v3.23.1].       Hierbij werden de gensymbolen veranderd naar Entrez-ID’s en werd voor correctie voor multiple testing de Benjamin-Hochberg (BH) methode gebruikt.           Waarbij een p-waarde cutoff van 0,05 werd gebruikt. Op basis hiervan werd de KEGG pathway hsa04662 geanalyseerd en gevisualiseerd met `pathview` [v 1.52.0].      Zie [Script](Script/) voor de uitwerking van de methode. 
 
 ## 📊 Resultaten
+### Differentiële genexpressie
+
 <img width="851" height="617" alt="Volcano plot" src="https://github.com/user-attachments/assets/0b1a2dc2-3f7f-4930-a6b2-01a624abe1ab" />
 <img width="773" height="617" alt="GO-analyse barplot" src="https://github.com/user-attachments/assets/36e09a9b-5f99-4e5b-bfe9-4a44b6581db9" />
 <img width="1173" height="763" alt="B-cell receptor signaling pathview" src="https://github.com/user-attachments/assets/f9816b2a-4197-4017-a7e7-b0075df9eccb" />
