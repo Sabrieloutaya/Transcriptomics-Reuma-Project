@@ -1,1 +1,15 @@
+Als data steward heb ik ervoor gezorgd dat alle projectgegevens het hele project door zorgvuldig werden beheerd. 
+Ik heb dit gedaan door: 
+1. Een vaste mappenstructuur aan te houden met aparte folders voor:
+•	Ruwe data
+•	Scripts
+•	Bronnen
+•	Documentatie
+2. Alle belangrijke details van scripts zoals de gebruikte multiple testing correctie en afkapwaarde die variabel kunnen zijn voor elke onderzoeker te documenteren. 
+3. Ervoor te zorgen dat de data veilig werd opgeslagen in de NHL stenden Onedrive met back ups zodat er geen data word verloren. 
+4. De onderzoekgegevens te documenteren in de methode sectie van de README zodat andere onderzoekers de gegevens kunnen terug vinden en hergebruiken.
 
+Scripts beheer ik door:
+De code overzichtelijk te documenteren ik Script met commentaar erbij. 
+Om scripts te delen kan gebruikt worden gemaakt van github. 
+Ook versienummers en handleiding van de packages zijn  beschreven in de methode waardoor andere onderzoekers mijn analyse kunnen controleren en reproduceren. 
