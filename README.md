@@ -27,14 +27,17 @@ Om verschillen in genexpressie tussen RA-patiënten en gezonde controles vast te
 
 <img width="851" height="617" alt="Volcano plot" src="https://github.com/user-attachments/assets/0b1a2dc2-3f7f-4930-a6b2-01a624abe1ab" />
 
-*Figuur 1: Volcano plot met significant differentieel tot expressie gebrachte genen.*
+*Figuur 1: Volcano plot van differentieel tot expressie gebrachte genen tussen RA-patiënten en gezonde controles*                     
+Op de x-as staat de Log2FoldChange (verandering in genexpressie) en op de y-as de −log₁₀ (p-waarde), die de statische significantie weergeeft. In totaal werden 29407 genen geanalysseerd. Genen met een significante verandering in genexpressie en een significante p-waarde zijn rood gekleurd en gelabed. Genen die alleen voldoen aan de Log2FC drempel zijn groen gekleurd, de grijs gekleurde verschillen niet significant tussen de groepen. De stippellijn geeft de afkapwaarde voor significantie aan. 
 
 ### Gene Ontology analyse
 Om inzicht te krijgen bij welke biologische processen de differentieel tot expressie komende genen betrokken waren werd een GO-analyse uitgevoerd.                In figuur 2 zijn immuungerelateerde processen zoals B-celgemedieerde immuniteit en leukocyt gemedieerde immuniteit verrijkt.                                      De lage aangepaste p-waarden wezen op een hoge statistische significantie. Op basis hiervan werd de B-celreceptorsignaalroute gekozen voor verdere analyse. 
 
+
 <img width="1920" height="992" alt="image" src="https://github.com/user-attachments/assets/bfcb6883-a75c-4c7b-abf1-ac4a4ae9f329" />
 
-*Figuur 2: GO-analyse barplot met significant differentieel tot expressie gebrachte genen.*
+*Figuur 2: GO-analyse barplot van significant differentieel tot expressie gebrachte genen bij RA-patiënten ten opzicht van gezonde controles*                    
+De weergegeven biologische processen zijn de meest significant verrijkte GO-termen. De x-as toont het aantal genen per GO term. De kleur van de balken geeft de gecorrigeerde p-waarde weer, hoe roder de balk hoe statistisch significanter het resultaat. 
 
 ### KEGG pathway analyse
 Om de betrokken signaalroutes van de differentieel tot expressie komende genen te onderzoeken, werd een pathway analyse uitgevoerd.                               De B-celreceptorsignaalroute bevatte op (o.a. PIR-B, CD22 en CD72) en neer (o.a. PI3K en AKT) gereguleerde genen in verschillende delen van de route (figuur 3). In tabel 2 zijn de functies van deze genen te zien gevonden via NCBI Gene (z.d.).  
