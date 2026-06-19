@@ -16,6 +16,9 @@ De RNA-seq data werden geanalyseerd in R met behulp van Bioconductor packages. V
 
 Voor de differentiële genexpressie werd een DESeqDataSet gemaakt op basis van de countmatrix met de package `DESeq2` [v1.52.0]. Genen met een p-waarde <0,05 en een log2FoldChange (log2FC) <-1 of >1 werden gezien als significant differentieel tot expressie gebracht. De resultaten werden gevisualiseerd met een volcano plot, gemaakt met `EnhancedVolcano` [v1.30.0]. Vervolgens werd een GO-analyse uitgevoerd met `clusterProfiler` [v4.20.0] en `org.Hs.eg.db` [v3.23.1].       Hierbij werden de gensymbolen veranderd naar Entrez-ID’s en werd voor correctie voor multiple testing de Benjamin-Hochberg (BH) methode gebruikt.           Waarbij een p-waarde cutoff van 0,05 werd gebruikt. Op basis hiervan werd de KEGG pathway hsa04662 geanalyseerd en gevisualiseerd met `pathview` [v 1.52.0].      Zie [Script](Script/) voor de uitwerking van de methode. 
 
+<img width="661" height="250" alt="image" src="https://github.com/user-attachments/assets/ca3544ab-addb-4e9d-a227-b43d213c4a9a" />
+
+
 ## 📊 Resultaten
 ### Differentiële genexpressie
 Om verschillen in genexpressie tussen RA-patiënten en gezonde controles vast te stellen werden differentieel tot expressie gebrachte genen gevisualiseerd in een volcano plot. Zoals weergegeven in figuur 1 waren `ADAMDEC1`, `BCL2A1`en `SRGN` verhoogd tot expressie gebracht. In tegenstelling tot`ANKRD30BL`, `MT-ND6`en `ZNF598`die verlaagd tot expressie werden gebracht. 
