@@ -36,5 +36,8 @@ Om de betrokken signaalroutes van de differentieel tot expressie komende genen t
 
 <img width="1173" height="763" alt="B-cell receptor signaling pathview" src="https://github.com/user-attachments/assets/f9816b2a-4197-4017-a7e7-b0075df9eccb" />
 
+<img width="772" height="257" alt="image" src="https://github.com/user-attachments/assets/e823900e-7328-4f7b-94b9-0946f6774c40" />
+
+
 ## Conclusie
 In dit RNA-seq transcriptomics onderzoek zijn de verschillen in genexpressie van RA-patiënten en gezonde controles onderzocht, met de focus op de B-celreceptorsignaalroute.                                                                                                                                         De expressie van genen binnen deze route verschilde tussen beide groepen, wat blijkt uit significant differentieel tot expressie gebrachte genen (o.a. ADAMDEC1, BCL2A1 en SRGN) en verrijkte immuunprocessen zoals B-cel en leukocyt gemedieerde immuniteit. Daarnaast werd binnen de B-celreceptorsignaalroute verhoogde expressie van PIR-B, CD22 en CD72 en verlaagde expressie van PI3K en AKT waargenomen.                                                                          Dit wijst op verstoringen in de B-celsignalering bij RA-patiënten. 
