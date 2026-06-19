@@ -79,14 +79,4 @@ pathview(
   pathway.id = "hsa04662",  
   species = "hsa",          
   gene.idtype = "SYMBOL",     
-  limit = list(gene = 5)    
-)
-#Reuma pathway 
-pathview(
-  gene.data = resultaten,
-  pathway.id = "hsa05323",  
-  species = "hsa",          
-  gene.idtype = "SYMBOL",     
-  limit = list(gene = 5)    
-)
-
+  limit = list(gene = 5))
