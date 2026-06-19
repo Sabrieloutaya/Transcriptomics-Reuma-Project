@@ -44,7 +44,9 @@ Om de betrokken signaalroutes van de differentieel tot expressie komende genen t
 
 <img width="1173" height="763" alt="B-cell receptor signaling pathview" src="https://github.com/user-attachments/assets/f9816b2a-4197-4017-a7e7-b0075df9eccb" />
 
-*Figuur 3: KEGG pathway-analyse van hsa04662.*
+*Figuur 3: KEGG pathway-analyse van de B-celreceptorsignaalroute bij RA-patiënten ten opzichte van gezonde controles*
+Visualisatie van de KEGG B-cell receptor signaling pathway op basis van de differentiële genexpressieanalyse.  
+De rode kleur duidt op een verhoogde expressie (opregulatie) en de groene kleur op een verlaagde expressie (neerregulatie) bij RA-patiënten t.o.v gezonde controles. 
 
 *Tabel 2: Functie van op en neer gereguleerde genen binnen de B-celreceptorsignaalroute.*
 <img width="772" height="257" alt="image" src="https://github.com/user-attachments/assets/e823900e-7328-4f7b-94b9-0946f6774c40" />
