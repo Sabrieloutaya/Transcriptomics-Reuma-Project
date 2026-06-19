@@ -29,7 +29,7 @@ Om verschillen in genexpressie tussen RA-patiënten en gezonde controles vast te
 ### Gene Ontology analyse
 Om inzicht te krijgen bij welke biologische processen de differentieel tot expressie komende genen betrokken waren werd een GO-analyse uitgevoerd.                In figuur 2 zijn immuungerelateerde processen zoals B-celgemedieerde immuniteit en leukocyt gemedieerde immuniteit verrijkt.                                      De lage aangepaste p-waarden wezen op een hoge statistische significantie. Op basis hiervan werd de B-celreceptorsignaalroute gekozen voor verdere analyse. 
 
-<img width="773" height="617" alt="GO-analyse barplot" src="https://github.com/user-attachments/assets/36e09a9b-5f99-4e5b-bfe9-4a44b6581db9" />
+<img width="1920" height="992" alt="image" src="https://github.com/user-attachments/assets/bfcb6883-a75c-4c7b-abf1-ac4a4ae9f329" />
 
 ### KEGG pathway analyse
 Om de betrokken signaalroutes van de differentieel tot expressie komende genen te onderzoeken, werd een pathway analyse uitgevoerd.                               De B-celreceptorsignaalroute bevatte op (o.a. PIR-B, CD22 en CD72) en neer (o.a. PK13 en AKT) gereguleerde genen in verschillende delen van de route (figuur 3). 
