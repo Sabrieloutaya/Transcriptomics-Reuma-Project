@@ -11,7 +11,7 @@ In dit onderzoek worden transcriptomicsgegevens van synoviumbiopten van RA-pati�
 
 ## 🔬 Methoden
 In dit onderzoek werd de genexpressie van synoviumbiopten van patiënten met reumatoïde artritis (RA) vergeleken met gezonde controles, met de focus op de        B-celreceptorsignaalroute. De gebruikte RNA-seq dataset was afkomstig uit de studie van Platzer et al. (2020) en werd verkregen uit de NCBI Sequence Read Archive (SRA). De dataset bestond uit 8 synoviumbiopten: 4 gezonde controles (SRR4785819, SRR4785820, SRR4785828 en SRR4785831) en 4 patiënten met RA (SRR4785979, SRR4785980, SRR4785986 en SRR4785988) (tabel 1). 
-De analyse werd uitgevoerd op al beschikbare ruwe sequencing reads. 
+De transcriptomische analyse werd uitgevoerd op al beschikbare ruwe sequencing reads. 
 
 De RNA-seq data werden geanalyseerd in R met behulp van Bioconductor packages. Een index van het humane referentiegenoom hg38 (p14) werd gegenereerd met `Rsubread` [v2.26.0], waarna de paired-end reads werden uitgelijnd tegen het referentiegenoom met de functie *align()*. De resulterende BAM-bestanden werden gesorteerd en geïndexeerd met `Rsamtools` [v2.28.0] met de functie *lapply ()*. Vervolgens werd met de functie *featureCounts()* een countmatrix gemaakt op basis van de BAM-bestanden en het bijbehorende GTF annotatiebestand van het humane hg38 genoom.
 
