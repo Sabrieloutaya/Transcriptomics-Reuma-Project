@@ -26,6 +26,9 @@ Zie [Script](Script/) voor de uitwerking van de methode.
 
 <img width="661" height="250" alt="image" src="https://github.com/user-attachments/assets/ca3544ab-addb-4e9d-a227-b43d213c4a9a" />
 
+<img width="1032" height="582" alt="image" src="https://github.com/user-attachments/assets/e753f2b9-f560-453c-afe8-ec885d30967a" />
+*Figuur 1: Workflow van de RNA-seq-data analyse.* 
+
 ## 📊 Resultaten
 ### Differentiële genexpressie
 Om verschillen in genexpressie tussen RA-patiënten en gezonde controles vast te stellen werden differentieel tot expressie gebrachte genen gevisualiseerd in een volcano plot. Zoals weergegeven in figuur 1 waren `ADAMDEC1`, `BCL2A1`en `SRGN` verhoogd tot expressie gebracht. In tegenstelling tot`ANKRD30BL`, `MT-ND6`en `ZNF598`die verlaagd tot expressie werden gebracht. 
