@@ -34,16 +34,21 @@ Zie [Script](Script/) voor de uitwerking van de methode.
 Om genen en biologische processen te identificeren die betrokken zijn bij reumatoïde artitis(RA), werden transcriptomicsgegevens van synoviumbiopten van RA-patiënten en gezonde controles geanalyseerd, met specifieke aandacht voor de B-celreceptorsignaalroute. 
 Eerst werden de verschillen in genexpressie tussen beide groepen onderzocht. Vervolgens werden deze genen gebuikt voor functionele verrijkingsanalyse met gene ontology en voor analyse van de KEGG B-celreceptorsignaalroute. 
 
-### Differentiële genexpressie
-Om verschillen in genexpressie tussen RA-patiënten en gezonde controles vast te stellen werden differentieel tot expressie gebrachte genen gevisualiseerd in een volcano plot. Zoals weergegeven in figuur 2 waren `ADAMDEC1`, `BCL2A1`en `SRGN` verhoogd tot expressie gebracht. In tegenstelling tot`ANKRD30BL`, `MT-ND6`en `ZNF598`die verlaagd tot expressie werden gebracht. 
+### Differentiële genexpressie tussen RA-patiënten en gezonde controles
+Om verschillen in genexpressie tussen RA-patiënten en gezonde controles vast te stellen werden differentieel tot expressie gebrachte genen gevisualiseerd in een volcano plot (figuur 2). Van de 29407 geanalyseerde genen waren er 2085 opgereguleerd en 2487 neergereguleerd in RA ten opzichte van gezonde controles.                          
+De meest opvallende opgereguleerde genen waren `ADAMDEC1`, `BCL2A1`en `SRGN` , omdat deze genen een hoge log2FoldChange en een hoge statische significantie vertoonden. 
+In tegenstelling tot`ANKRD30BL`, `MT-ND6`en `ZNF598`die verlaagd tot expressie werden gebracht. Deze genen vielen op door hun erg lage log2FoldChange en zeer hoge statistische significantie (-log10P van 30 tot ongeveer 45). 
 
 <img width="851" height="617" alt="Volcano plot" src="https://github.com/user-attachments/assets/0b1a2dc2-3f7f-4930-a6b2-01a624abe1ab" />
 
 *Figuur 2: Volcano plot van differentieel tot expressie gebrachte genen tussen RA-patiënten en gezonde controles*                     
 Op de x-as staat de Log2FoldChange (verandering in genexpressie) en op de y-as de −log₁₀ (p-waarde), die de statische significantie weergeeft. In totaal werden 29407 genen geanalysseerd. Genen met een significante verandering in genexpressie en een significante p-waarde zijn rood gekleurd en gelabed. Genen die alleen voldoen aan de Log2FC drempel zijn groen gekleurd, de grijs gekleurde verschillen niet significant tussen de groepen. De stippellijn geeft de afkapwaarde voor significantie aan. 
 
-### Gene Ontology analyse
-Om inzicht te krijgen bij welke biologische processen de differentieel tot expressie komende genen betrokken waren werd een GO-analyse uitgevoerd.                In figuur 3 zijn immuungerelateerde processen zoals B-celgemedieerde immuniteit en leukocyt gemedieerde immuniteit verrijkt.                                      De lage aangepaste p-waarden wezen op een hoge statistische significantie. Op basis hiervan werd de B-celreceptorsignaalroute gekozen voor verdere analyse. 
+### Differentieel tot expressie gebrachte genen zijn verrijkt voor imuunprocessen: Gene Ontology analyse
+Om inzicht te krijgen in welke biologische processen betrokken zijn bij de differentieel tot expressie gebrachte genen, waren de meest significant verrijkte GO-termen weergegeven in een barplot (figuur 3).  
+De sterkst verrijkte biologische processen hadden betrekking op immunfuncties, waaronder *B-cell mediated immunity en immunoglobulin mediated immune response*     
+Deze processen vertoonden lage aangepaste p-waarden wat laat zien dat deze biologische processen vaker voorkomen onder de differentieel tot expressie gebrachte genen.  
+Op basis hiervan werd de B-celreceptorsignaalroute gekozen voor verdere analyse. 
 
 
 <img width="1920" height="992" alt="image" src="https://github.com/user-attachments/assets/bfcb6883-a75c-4c7b-abf1-ac4a4ae9f329" />
@@ -51,8 +56,12 @@ Om inzicht te krijgen bij welke biologische processen de differentieel tot expre
 *Figuur 3: GO-analyse barplot van significant differentieel tot expressie gebrachte genen bij RA-patiënten ten opzicht van gezonde controles*                    
 De weergegeven biologische processen zijn de meest significant verrijkte GO-termen. De x-as toont het aantal genen per GO term. De kleur van de balken geeft de gecorrigeerde p-waarde weer, hoe roder de balk hoe statistisch significanter het resultaat. 
 
-### KEGG pathway analyse
-Om de betrokken signaalroutes van de differentieel tot expressie komende genen te onderzoeken, werd een pathway analyse uitgevoerd.                               De B-celreceptorsignaalroute bevatte op (o.a. PIR-B, CD22 en CD72) en neer (o.a. PI3K en AKT) gereguleerde genen in verschillende delen van de route (figuur 4). In tabel 2 zijn de functies van deze genen te zien gevonden via NCBI Gene (z.d.).  
+### Differentiële regulatie van de B-celreceptorsignaalroute bij RA: KEGG pathway analyse
+Van de verrijkte GO-termen sprong de B-celgemedieerde immuniteit uit, daardoor werd de KEGG B-celreceptorsignaalroute nader onderzocht. 
+Binnen deze pathway werden meerdere genen differentieel gereguleerd (Figuur 4).                             
+De genen `PIR-B`, `CD22` en `CD72` waren opgereguleerd, terwijl componenten van de `PI3K/AKT` route een verlaagde expressie vertoonden. 
+Deze resultaten wijzen erop dat zowel remmende receptoren als intracellulaire signmaal moleculen binnen de B-celreceptorsignaalroute verschillend gereguleerd zijn bij RA ten opzichte van gezonde controles.  
+Tabel 2 geeft een overzicht van de functie van de belangrijkste op- en neergereguleerde genen binnen deze signaalroute gevonden via NCBI Gene (z.d.).  
 
 <img width="1173" height="763" alt="B-cell receptor signaling pathview" src="https://github.com/user-attachments/assets/f9816b2a-4197-4017-a7e7-b0075df9eccb" />
 
@@ -65,4 +74,5 @@ De rode kleur duidt op een verhoogde expressie (opregulatie) en de groene kleur 
 
 
 ## Conclusie
-In dit RNA-seq transcriptomics onderzoek zijn de verschillen in genexpressie van RA-patiënten en gezonde controles onderzocht, met de focus op de B-celreceptorsignaalroute.                                                                                                                                         De expressie van genen binnen deze route verschilde tussen beide groepen, wat blijkt uit significant differentieel tot expressie gebrachte genen (o.a. ADAMDEC1, BCL2A1 en SRGN) en verrijkte immuunprocessen zoals B-cel en leukocyt gemedieerde immuniteit. Dit sluit aan bij eerdere studies die aantonen dat B-cellen een belangrijke rol spelen bij de pathogenese van RA door hun betrokkenheid bij de regulatie van immuun responsen (Mauri & Ehrenstein, 2007).                         Daarnaast werd binnen de B-celreceptorsignaalroute verhoogde expressie van PIR-B, CD22 en CD72 en verlaagde expressie van PI3K en AKT waargenomen.               Omdat deze genen betrokken zijn bij de signaaloverdracht en regulatie van B-cellen, wijzen deze veranderingen op verstoringen in de B-celsignalering bij RA-patiënten. 
+In dit RNA-seq transcriptomics onderzoek zijn de verschillen in genexpressie van RA-patiënten en gezonde controles onderzocht, met de focus op de B-celreceptorsignaalroute.                                                                                                                                         
+De expressie van genen binnen deze route verschilde tussen beide groepen, wat blijkt uit significant differentieel tot expressie gebrachte genen (o.a. ADAMDEC1, BCL2A1 en SRGN) en verrijkte immuunprocessen zoals B-cel en leukocyt gemedieerde immuniteit. Dit sluit aan bij eerdere studies die aantonen dat B-cellen een belangrijke rol spelen bij de pathogenese van RA door hun betrokkenheid bij de regulatie van immuun responsen (Mauri & Ehrenstein, 2007).                         Daarnaast werd binnen de B-celreceptorsignaalroute verhoogde expressie van PIR-B, CD22 en CD72 en verlaagde expressie van PI3K en AKT waargenomen.               Omdat deze genen betrokken zijn bij de signaaloverdracht en regulatie van B-cellen, wijzen deze veranderingen op verstoringen in de B-celsignalering bij RA-patiënten. 
