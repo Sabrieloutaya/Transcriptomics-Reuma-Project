@@ -31,6 +31,9 @@ Zie [Script](Script/) voor de uitwerking van de methode.
 *Figuur 1: Workflow van de RNA-seq-data analyse.*
 
 ## 📊 Resultaten
+Om genen en biologische processen te identificeren die betrokken zijn bij reumatoïde artitis(RA), werden transcriptomicsgegevens van synoviumbiopten van RA-patiënten en gezonde controles geanalyseerd, met specifieke aandacht voor de B-celreceptorsignaalroute. 
+Eerst werden de verschillen in genexpressie tussen beide groepen onderzocht. Vervolgens werden deze genen gebuikt voor functionele verrijkingsanalyse met gene ontology en voor analyse van de KEGG B-celreceptorsignaalroute.
+
 ### Differentiële genexpressie
 Om verschillen in genexpressie tussen RA-patiënten en gezonde controles vast te stellen werden differentieel tot expressie gebrachte genen gevisualiseerd in een volcano plot. Zoals weergegeven in figuur 2 waren `ADAMDEC1`, `BCL2A1`en `SRGN` verhoogd tot expressie gebracht. In tegenstelling tot`ANKRD30BL`, `MT-ND6`en `ZNF598`die verlaagd tot expressie werden gebracht. 
 
